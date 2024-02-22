@@ -44,7 +44,7 @@ public class DeviceNumberActivity extends Activity implements GoogleApiClient.Co
 
     private void getPhone() {
         GoogleApiClient googleApiClient = new GoogleApiClient.Builder(this)
-                .addApi(Auth.CREDENTIALS_API)
+                .addApi(Auth.GOOGLE_SIGN_IN_API)
                 .addConnectionCallbacks((GoogleApiClient.ConnectionCallbacks) DeviceNumberActivity.this)
                 .addOnConnectionFailedListener((GoogleApiClient.OnConnectionFailedListener) DeviceNumberActivity.this)
                 .build();
